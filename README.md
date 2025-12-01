@@ -2,6 +2,14 @@
 
 A multi-agent orchestration system for recruitment automation. When a candidate's status changes, a router agent intelligently delegates tasks to specialist agents for assessment invitations or interview preparation.
 
+## Demo Output
+
+![Orchestrator Demo](images/RecruitEM1.png)
+*Example output showing the multi-agent orchestration in action*
+
+![Assessment and Interview Messages](images/RecruitEM2.png)
+*Sample assessment invitation and interview preparation messages*
+
 ## Architecture
 
 ```mermaid
@@ -34,6 +42,7 @@ RecruitEM/
 ├── test.py              # Automated test suite
 ├── requirements.txt     # Dependencies (optional)
 ├── README.md           # This file
+├── images/             # Screenshots and demo images (create this folder)
 └── .gitignore          # Git ignore rules
 ```
 
@@ -66,7 +75,7 @@ print(message)
 - **Specialist Agents**: Domain-specific processing (Assessment/Interview)
 - **Tool Integration**: Dynamic function calls (test links, RAG search, tip generation)
 - **State Management**: Type-safe data flow through the pipeline
-- **Observable Execution**: Real-time console output showing decision-making
+- **Observable Execution**: Real-time colored console output showing decision-making
 
 ## Code Structure
 
@@ -77,7 +86,6 @@ The `orchestrator.py` file is organized top-to-bottom:
 3. **Tools**: Simple functions (get_test_link, rag_search, generate_prep_tip)
 4. **Agents**: Router, Assessment, and Interview agents
 5. **Orchestrator**: Main flow that wires everything together
-6. **Demo**: Test cases showing the system in action
 
 ## Usage Example
 
@@ -145,7 +153,7 @@ python3 -c "from orchestrator import orchestrate; print(orchestrate('Test', 'tes
 
 ### For Demonstration
 
-1. Run `python3 demo.py` - Shows both Assessment and Interview workflows
+1. Run `python3 demo.py` - Shows both Assessment and Interview workflows with full messages
 2. Run `python3 test.py` - Shows automated testing with verification
 3. Open `orchestrator.py` - Walk through the code structure
 4. Show customization - Edit job descriptions or test links to show flexibility

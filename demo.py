@@ -22,7 +22,9 @@ assessment_msg = orchestrate(
     job_id="F0188"
 )
 print("\nGenerated Assessment Message:")
-print(assessment_msg[:200] + "...\n")
+print("-" * 70)
+print(assessment_msg)
+print("-" * 70 + "\n")
 
 # Demo 2: Interview workflow
 print("\n[2] INTERVIEW WORKFLOW")
@@ -34,7 +36,9 @@ interview_msg = orchestrate(
     job_id="F0337"
 )
 print("\nGenerated Interview Message:")
-print(interview_msg[:200] + "...\n")
+print("-" * 70)
+print(interview_msg)
+print("-" * 70 + "\n")
 
 print("="*70)
 print("DEMONSTRATION COMPLETE")
