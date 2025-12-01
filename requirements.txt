@@ -1,0 +1,10 @@
+# Core dependencies for Phase 3: Multi-Agent Orchestration
+# This system works with just Python stdlib, but optional enhancements are available
+
+# Optional: For AI-powered interview tips using Claude
+# Uncomment and install if you want to use the Claude API integration
+anthropic>=0.39.0
+
+# Optional: For type checking during development
+# mypy>=1.0.0
+
